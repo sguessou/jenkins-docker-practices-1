@@ -1,4 +1,5 @@
-# Devops Practices #1
-## Dockerizing Jenkins
-### Summary
-In the course of this article we will be running Jenkins on Docker.
+# Devops Practices 
+## Database backups automation using Docker, Jenkins and AWS S3.
+### Dokerizing Jenkins
+The first step in this howto is to create a docker container running Jenkins.
+Go here for all the steps needed for that --> 
