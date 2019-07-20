@@ -8,7 +8,7 @@ The image will start downloading, when the download finishes you can list the im
 ```
 $ docker images        
 ```
-![Jenkins docker image](jenkins-image.png)
+![Jenkins docker image](images/dockerizing-jenkins/jenkins-image.png)
 
 To configure our Jenkins containers we well use docker compose tool.
 Our YAML configuration file (docker-compose.yml) looks like the following:
@@ -36,30 +36,30 @@ Run the container in detached mode (background) with this command:
 ```
 $ docker-compose up -d
 ```
-![Jenkins docker-compose up](jenkins-compose-up.png)
+![Jenkins docker-compose up](images/dockerizing-jenkins/jenkins-compose-up.png)
 
 To finalize the Jenkins installation we will need to grab the administrator password from the running container's logs.
 To access the logs run this command:
 ```
 $ docker logs -f jenkins    
 ```
-![Jenkins password](jenkins-password.png)     
+![Jenkins password](images/dockerizing-jenkins/jenkins-password.png)     
     
 Go to localhost:8080 and start the installation process by pasting in the administrator password.
 
-![Unlock Jenkins](jenkins-startup.png)            
+![Unlock Jenkins](images/dockerizing-jenkins/jenkins-startup.png)            
 
 Choose the "Install suggested plugins" option.   
 
-![Jenkins plugins](jenkins-plugins.png)          
+![Jenkins plugins](images/dockerizing-jenkins/jenkins-plugins.png)          
 
 Create your admin user.   
 
-![Jenkins admin](jenkins-create-user.png)        
+![Jenkins admin](images/dockerizing-jenkins/jenkins-create-user.png)        
 
 Welcome to Jenkins!        
 
-![Jenkins Welcome](jenkins-welcome.png)
+![Jenkins Welcome](images/dockerizing-jenkins/jenkins-welcome.png)
                   
 
                
